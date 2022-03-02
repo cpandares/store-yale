@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Product</title>
+</head>
+<style>
+     :root {
+        --white: #FFFFFF;
+        --black: #000000;
+        --very-ligth-pink: #C7C7C7;
+        --text-input-field: #F7F7F7;
+        --hospital-green: #ACD9B2;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+    }
+
+    body {
+        font-family: 'Quicksand', sans-serif;
+        margin: 0;
+    }
+    .product-detail{
+        width: 360px;
+        height: auto;
+        padding-bottom: 24px;
+        position: absolute;
+        right: 0;
+    }
+    .product-detail-close{
+        background-color: white;
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        top: 24px;
+        left: 24px;
+        z-index: 2;
+        padding: 12px;
+        border-radius: 50%;
+    }
+    .product-detail-close img{
+       
+        cursor: pointer;
+      
+    }
+    .product-detail > img:nth-child(2){
+        width: 360px;
+        height: 360px;
+        object-fit: cover;
+        border-radius: 0 0 25px 25px;
+    }
+    .btn-primary{
+    background-color: var(--hospital-green);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 40px;
+}
+.add-to-cart-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product{
+    margin: 24px 24px 0px 24px;
+}
+.product p:nth-child(1){
+   font-weight: bold;
+   font-size: var(--md);
+   margin-top: 0px;
+   margin-bottom: 4px;
+}
+.product p:nth-child(2){
+  color: var(--very-ligth-pink);
+   font-size: var(--md);
+   margin-top: 0px;
+   margin-bottom: 36px;
+}
+.product p:nth-child(3){
+  color: var(--very-ligth-pink);
+   font-size: var(--sm);
+   margin-top: 0px;
+   margin-bottom: 36px;
+}
+@media(max-width:640px){
+    .product-detail{
+        width: 100%;
+    }
+}
+</style>
+<body>
+    
+    <aside class="product-detail">
+        <div class="product-detail-close">
+
+            <img src="./assets/icons/icon_close.png" alt="">
+        </div>
+        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike">
+        <div class="product">
+            <p>$350.00</p>
+            <p>Bike</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui eius quasi ut consequuntur? Ab quod sequi, cupiditate rem maxime architecto, distinctio, quasi veritatis quos sit voluptatum debitis voluptate? Sequi ad recusandae natus quos, commodi soluta amet reiciendis mollitia, pariatur, beatae incidunt. Est consequuntur inventore facere libero dicta cumque in accusamus!</p>
+            <button class="btn-primary add-to-cart-button">
+                <img src="./assets/icons/bt_add_to_cart.svg" alt="add to cart">
+                Add To Cart
+            </button>
+        </div>
+    </aside>
+
+</body>
+</html>
